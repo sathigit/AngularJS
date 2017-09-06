@@ -6,12 +6,12 @@ An AngularJS training application that helps to understand the concepts and comp
 Get the application from the repository: 
 https://github.com/vaibhavnitya/AngularJS.git <br />
 1. Clone this repository 
-**git clone https://github.com/vaibhavnitya/AngularJS.git** <br />
+** git clone https://github.com/vaibhavnitya/AngularJS.git ** <br />
 2. Go into the repository
-**cd AngularJS** <br />
+** cd AngularJS ** <br />
 3. Install dependencies
-**npm install** <br />
+** npm install ** <br />
 4. To run the app
-**npm run start** <br />
+** npm run start ** <br />
 5. To run the app and watch for live changes
-**npm run always** <br />
+** npm run always ** <br />

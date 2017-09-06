@@ -8,11 +8,12 @@
     "always": "nodemon server.js"
   },
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.15.4",
     "path": "^0.12.7",
     "socket.io": "^2.0.3"
   },
-  "devDepencencies": {
+  "devDependencies": {
     "nodemon": "^1.11.0"
   }
 }
