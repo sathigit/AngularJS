@@ -15,3 +15,6 @@ https://github.com/vaibhavnitya/AngularJS.git <br />
 ** npm run start ** <br />
 5. To run the app and watch for live changes
 ** npm run always ** <br />
+
+
+Added <base href="/" />
