@@ -1,7 +1,7 @@
-var http = require ('http'),
-    express = require ('express'),
+var http = require('http'),
+    express = require('express'),
     app = express(http),
-    socket = require ('socket.io')(http),
+    socket = require('socket.io')(http),
     path = require('path');
 
 // Initiallizing configurations
@@ -18,33 +18,17 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 // start the http connection
-app.listen(PORT, function () {  
+app.listen(PORT, function() {
     console.log('Express server started at PORT : ' + PORT);
 });
 
-socket.on('connection', function (connection) {
+socket.on('connection', function(connection) {
     console.log('New socket connection established');
 });
 
 // define APIs for routes
-app.get('/', function (req, res) {
+app.get('/*', function(req, res) {
     res.render('index.html');
-});
-
-app.get('/programs', function (req, res) {
-    res.render('programs/programs.html');
-});
-
-app.get('/books', function (req, res) {
-    res.render('books/books.html');
-});
-
-app.get('/home', function (req, res) {
-    res.render('home/home.html');
-});
-
-app.get('/questions', function (req, res) {
-    res.render('questions/questions.html');
 });
 
 app.get('/getData', routes.getData);
