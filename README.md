@@ -17,4 +17,3 @@ https://github.com/vaibhavnitya/AngularJS.git <br />
 ** npm run always ** <br />
 
 
-Added <base href="/" />
