@@ -13,7 +13,7 @@ var routesModule = require('./server/routes.js'),
 
 // Define static path to render files
 app.use(express.static(path.join(__dirname, 'app')));
-app.set('views', __dirname + '/app/components');
+app.set('views', __dirname + '/app');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
@@ -27,8 +27,12 @@ socket.on('connection', function(connection) {
 });
 
 // define APIs for routes
-app.get('/*', function(req, res) {
+app.get(['/', '/home', '/books', '/programs', '/questions'], function(req, res) {
     res.render('index.html');
 });
 
 app.get('/getData', routes.getData);
+
+app.get('/fileupload', function() {
+    console.log('uploading file');
+})
