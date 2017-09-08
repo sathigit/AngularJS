@@ -6,19 +6,19 @@ const app = angular.module('app', ['ngRoute', 'ngStorage'])
         });
         $routeProvider
             .when("/home", {
-                templateUrl: "components/home/home.html" //,
+                templateUrl: "src/components/home/home.html" //,
                     // controller : "londonCtrl"
             })
             .when("/books", {
-                templateUrl: "components/books/books.html",
+                templateUrl: "src/components/books/books.html",
                 controller: "booksController"
             })
             .when("/programs", {
-                templateUrl: "components/programs/programs.html" //,
+                templateUrl: "src/components/programs/programs.html" //,
                     // controller : "londonCtrl"
             })
             .when("/questions", {
-                templateUrl: "components/questions/questions.html" //,
+                templateUrl: "src/components/questions/questions.html" //,
                     // controller : "parisCtrl"
             });
     })

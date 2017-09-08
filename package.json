@@ -5,7 +5,9 @@
   "url": "https://www.github.com/vaibhavnitya/AngularJS.git",
   "scripts": {
     "start": "node server.js",
-    "always": "nodemon server.js"
+    "always": "nodemon server.js",
+    "prod-start": "node server_prod.js",
+    "prod-always": "nodemon server_prod.js"
   },
   "dependencies": {
     "ejs": "^2.5.7",

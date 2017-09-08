@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "ngstorage": "^0.3.11",
+    "angular-route": "^1.6.6"
+  }
 }
