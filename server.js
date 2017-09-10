@@ -33,6 +33,8 @@ app.get(['/', '/home', '/books', '/programs', '/questions'], function(req, res) 
 
 app.get('/getData', routes.getData);
 
+app.get('/getBooks', routes.getBooks);
+
 app.get('/fileupload', function() {
     console.log('uploading file');
 })
