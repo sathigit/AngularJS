@@ -5,8 +5,9 @@
     <base href="/" />
     <title>Angular Application Training</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/{{#BUILD_NUMBER}}/style.css">
     <!-- inject:css -->
-    <link rel="stylesheet" href="./src/components/layout/layout.css">
+    <link rel="stylesheet" href="/src/components/layout/layout.css">
     <!-- endinject -->
 </head>
 
@@ -17,10 +18,12 @@
     <script src="./bower_components/angular-route/angular-route.min.js"></script>
     <script src="./bower_components/ngstorage/ngStorage.min.js"></script>
 
-    <script src="./src/routes.js"></script>
-    <script src="./src/directives/directives.js"></script>
-    <script src="./src/components/layout/layout.js"></script>
-    <script src="./src/components/books/booksController.js"></script>
+    <!-- inject:js -->
+    <script src="/src/routes.js"></script>
+    <script src="/src/directives/directives.js"></script>
+    <script src="/src/components/books/booksController.js"></script>
+    <script src="/src/components/layout/layout.js"></script>
+    <!-- endinject -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
