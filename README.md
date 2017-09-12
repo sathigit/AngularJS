@@ -16,4 +16,19 @@ https://github.com/vaibhavnitya/AngularJS.git <br />
 5. To run the app and watch for live changes
 ** npm run always ** <br />
 
+## Setup Angular JS TDD using karma, jasmine
+<br />
+** npm install karma --save-dev ** <br />
+** npm install jasmine-core@* --save-dev ** <br />
+** npm install karma-jasmine --save-dev ** <br />
+** npm install karma-chrome-launcher --save-dev ** <br />
+** karma init ** <br />
+
+** bower install angular ** <br />
+** bower install angular-mocks ** <br />
+** bower install angular-resource ** <br />
+** karma start karma.conf.js ** <bt />
+
+
+
 
