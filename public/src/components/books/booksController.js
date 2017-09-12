@@ -1,5 +1,5 @@
-angular.module('app').controller('booksController', ['$scope', '$localStorage', '$location'], function($s, $localStorage, $location) {
-    $s.$storage = $localStorage;
-
-    $s.$storage.path = $location.path();
-});
+app.controller('booksController', ['$scope', '$localStorage', '$location', 'booksService', function ($scope, $localStorage, $location, booksService) {
+  booksService.getBooks().then(function (booksList) {
+        $scope.books = booksList;
+    });
+}]);
